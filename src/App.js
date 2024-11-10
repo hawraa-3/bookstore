@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import storeImage from "./book.webp"
 
 function App() {
+  console.log(storeImage)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<div className="App">
+ <h1>Bookstore</h1>
+ <p>this is my book store</p>
+
+<img class="storeImage" src={storeImage}></img>
+
     </div>
   );
 }
