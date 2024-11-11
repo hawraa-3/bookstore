@@ -10,7 +10,37 @@
 .storeImage{
   min-width: 100%;
 }
+.Parent
+{
+ display: flex;
+justify-content: space-around;
+}
+.product{
+  width:200px;
+  
+  flex-direction: column;
+  text-align: center;
+  
+ 
+}
+.image2{
+  float: right;
+  display: inline;
+  flex-direction: column;
+  text-align: center;
+  
+}
 
+.javaimage{
+  width: 200px;
+
+
+}
+
+.cssimage{
+  width: 220px;
+ 
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
