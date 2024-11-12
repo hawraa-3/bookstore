@@ -3,6 +3,8 @@ import './App.css';
 import storeImage from "./book.webp"
 import javabook from "./book java.jpeg"
 import cssbook from "./css.jpeg"
+import ProductItem from './Components/ProductItem';
+
 
 function App() {
   console.log(storeImage)
@@ -23,14 +25,9 @@ function App() {
 
 
 const productsList = products.map((product,index)=>{
-  return(
-    <div className="product" key={index}>
-  <img className="javaimage" src={javabook}></img>
-  <p> {product.name} </p>
-  <h6>{product.price}</h6>
-</div>
-  )
-})
+  
+  return <ProductItem />;
+});
   return (
 
 <div className="App">
@@ -41,10 +38,7 @@ const productsList = products.map((product,index)=>{
 
 
 <div className="Parent">
-
-
 {productsList}
-
 </div>
 
     </div>
