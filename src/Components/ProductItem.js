@@ -1,14 +1,14 @@
 import React from 'react'
 import javabook from "../book java.jpeg"
 
-const ProductItem = () => {
+const ProductItem = (props) => {
   return (
   
         
     <div className="product" >
-  <img className="javaimage" src={javabook}></img>
-  <p> book </p>
-  <h6>12kd</h6>
+  <img className="javaimage" src={props.myproduct.image}></img>
+  <p> {props.myproduct.name} </p>
+  <h6>{props.myproduct.price}</h6>
 </div>
   )
    
